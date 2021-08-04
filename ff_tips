@@ -1,0 +1,3 @@
+# get tag info from file
+
+DATA=$(ffprobe -hide_banner -show_entries format_tags=${FF_TAG[$i]} -of csv -i "$file" 2>&1 | sed -n -e 's/format,//p')

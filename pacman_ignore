@@ -1,0 +1,4 @@
+### How to ignore packages in pacman update ###
+
+# Example:
+	sudo pacman -Syu --ignore=pipewire,youtube-dl

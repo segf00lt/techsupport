@@ -1,0 +1,12 @@
+%----In case your fallback image isn't created or you fuck something up kernelwise----%
+
+1) boot from a live usb (arch install iso)
+2) mount your drive and chroot into it:
+	# mount /dev/sda2 /mnt; arch-chroot /mnt
+3) make the fallback image and update the grub config:
+	# mkinitcpio -P; grub-mkconfig -o /boot/grub/grub.cfg
+4) leave chroot:
+	# exit
+5) unmount drive and reboot:
+	# umount /dev/sda2; reboot
+

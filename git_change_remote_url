@@ -1,0 +1,4 @@
+# how to change remote git url (incase you forget like an idiot)
+
+EX:
+git remote set-url origin https://github.com/segf00lt/dwm

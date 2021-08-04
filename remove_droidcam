@@ -1,0 +1,3 @@
+# How to remove droidcam in case you forget
+
+sudo /opt/droidcam-uninstall

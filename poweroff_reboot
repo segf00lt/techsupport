@@ -1,0 +1,3 @@
+# make poweroff and reboot work without sudo
+
+%wheel ALL=(ALL) NOPASSWD: /usr/bin/reboot, /usr/bin/poweroff

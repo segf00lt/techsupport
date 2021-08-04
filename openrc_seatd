@@ -1,0 +1,18 @@
+# place seatd script in /etc/init.d and chmod +x
+# make sure you created the seat group with `groupadd seat`
+# and added your user to the group with `usermod -a -G seat <username>`
+nvim seatd :
+	#!/usr/bin/openrc-run
+
+	supervisor=superivise-daemon
+	command="/usr/bin/seatd"
+	command_args="-g seat"
+
+	depend() {
+		need dbus
+		after logger
+	}
+
+sudo cp seatd /etc/init.d && sudo chmod +x /etc/init.d/seatd
+
+sudo rc-update add seatd default && sudo rc-service seatd start
