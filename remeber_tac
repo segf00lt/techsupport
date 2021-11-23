@@ -1,0 +1,5 @@
+tac - like cat but in reverse
+
+in vim you can pipe a selection to program with '!'
+so if you select some lines and pipe them to tac it'll
+reverse their order

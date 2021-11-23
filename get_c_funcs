@@ -1,0 +1,3 @@
+# a one liner to get C function declarations from a source file into a header
+
+grep "^[A-Za-z\*]\+ [a-z_]\+(.*)" < example.c | sed -n "s/ {/;/p" >> example.h
