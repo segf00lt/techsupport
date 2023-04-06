@@ -1,0 +1,11 @@
+gpg --edit-key <Tab complete or enter key>
+
+gpg> list
+<lists keys>
+gpg> key 0
+gpg> expire
+<type in prompt>
+gpg> key 1
+gpg> expire
+<type in prompt>
+gpg> save

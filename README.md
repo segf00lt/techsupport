@@ -1,4 +1,3 @@
 # techsupport
 
-## TODO
-- write files in markdown
+Useful tips.
